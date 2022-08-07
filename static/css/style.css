@@ -1,0 +1,71 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
+
+:root {
+    --light: #969696;
+    --medium: #565656;
+    --dark: #434343;
+}
+
+* {
+    font-family: 'Cascadia Code', sans-serif;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.normal-text {
+    color: var(--dark);
+}
+
+@media (min-width: 571px) {
+    /* switches the horizontal layout to vertical */
+    .sidebar-list {
+        height: 100vh;
+        color: #FF0000;
+    }
+}
+
+.nav-link {
+    margin: 0 140px 0 120px;
+    padding-top: 40px;
+    color: #969696;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: var(--dark);
+    transform: scale(1.05, 1.05);
+    transition: 0.55s;
+}
+
+.nav-link.active {
+    color: var(--dark);
+    transform: scale(1.05, 1.05);
+}
+
+.float-container {
+    position: relative;
+}
+
+.profile-position {
+position: absolute;
+    width: 500px;
+    height: 500px;
+    right: 100px;
+    top: 20%;
+}
+
+.circle {
+    background: #FAFAFA;
+    border-radius: 50%;
+}
+
+.title-description {
+    color: var(--light);
+}
+
+.content-text {
+    line-height: 40px;
+}
