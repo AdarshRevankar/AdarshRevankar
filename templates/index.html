@@ -27,23 +27,40 @@
 
         <div class="row justify-content-center">
             <!-- navbar -->
-            <nav class="nav flex-column nav justify-content-center sidebar-list">
-                <a class="nav-link active" href="/">Home</a>
-                <a class="nav-link" href="#">Work</a>
-                <a class="nav-link" href="#">Hobbies</a>
-                <a class="nav-link" href="#">Contact</a>
+            <nav id="navbar-root" class="col-9 navbar navbar-expand-lg navbar-light w-100">
+              <a class="navbar-brand" href="#">Adarsh Revankar</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/tech">Tech</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/hobbies">Hobbies</a>
+                  </li>
+                </ul>
+                <!-- <span class="navbar-text">
+                  Navbar text with an inline element
+                </span> -->
+              </div>
             </nav>
             <!-- content -->
             <nav class="col-9 nav flex-column nav justify-content-center">
-                <div class="container">
-                    <h1 id="title" class="normal-text">Adarsh Revankar</h1>
-                    <p class="title-description">Android & ML</p>
-                    <br>
-                    <p class="content-text">
+                <div class="d-flex flex-row align-items-center" style="min-height: 84vh">
+                    <div class="box w-100">
+                      <h1 id="title" class="normal-text">Adarsh Revankar</h1>
+                      <p class="title-description">Android & ML</p>
+                      <p class="content-text">
                         Hi there, that's me ! <br>
                         Just exploring ways to turn these electronic devices to smart ones<br>
                         As of now {{visit_count}} people have already visited here
                     </p>
+                    </div>
                 </div>
             </nav>
         </div>
