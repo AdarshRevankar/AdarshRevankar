@@ -10,9 +10,21 @@
     font-family: 'Cascadia Code', sans-serif;
 }
 
+#root-container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 #navbar-root {
     padding-top: 50px;
     padding-bottom: 30px;
+
+    /* immitating row behaviour of bootstrap */
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+
+    /* shadow */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.03);
 }
 
 #title {
